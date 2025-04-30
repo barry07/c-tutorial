@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+/* print Fahrenheit-Celcius table*/
+
+main()
+{
+    int fahr, celcius, lower, upper, step;
+
+    lower = 0; /* lower limit of temp table*/
+    upper = 400; /* upper limit of temp table*/
+    step = 50; /* step size*/
+
+    fahr = lower;
+    while (fahr <= upper)
+    {
+        celcius = 5 * (fahr - 32) / 9;
+        printf("%3d\t%6d\n", fahr, celcius);
+        fahr = fahr + step;
+    }
+    
+}
