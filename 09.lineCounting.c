@@ -15,5 +15,5 @@ int main(void)
     while ((c = getchar()) != EOF)
         if (c == '\n')
             ++nl;
-    printf('%d\n', nl);
+    printf("%d\n", nl);
 }
